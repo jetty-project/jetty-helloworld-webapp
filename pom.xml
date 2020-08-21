@@ -4,6 +4,14 @@
   <groupId>org.eclipse.jetty.demo</groupId>
   <artifactId>jetty-helloworld-webapp</artifactId>
   <version>1.0</version>
+
+  <properties>
+    <compiler.source>1.8</compiler.source>
+    <compiler.target>1/8</compiler.target>
+    <compiler.release>1.8</compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
