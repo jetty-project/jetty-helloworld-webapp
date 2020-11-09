@@ -108,6 +108,11 @@
           <version>${maven.surefire.plugin.version}</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>${maven.war.plugin.version}</version>
+        </plugin>
+        <plugin>
           <groupId>com.mycila</groupId>
           <artifactId>license-maven-plugin</artifactId>
           <version>${license.plugin.version}</version>
@@ -139,11 +144,11 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>[3.0.0,)</version>
+                  <version>[3.6.0,)</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>[11,)</version>
-                  <message>[ERROR] OLD JDK [${java.version}] in use.  This project requires JDK 11 or newer</message>
+                  <version>[1.8,)</version>
+                  <message>[ERROR] OLD JDK [${java.version}] in use.  This project requires JDK 1.8 or newer</message>
                 </requireJavaVersion>
               </rules>
             </configuration>
