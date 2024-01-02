@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - 'jetty-10.0.x'
+      - 'jetty-11.0.x'
+  pull_request:
+
+jobs:
+  build:
+    name: Build
+    uses: jetty/.github/.github/workflows/maven-ci.yml@main
+    with:
+      jdk-matrix: '[ "11", "17", "21" ]'
